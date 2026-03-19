@@ -58,7 +58,7 @@ The goal was to create something that feels like a **digital vault** — warm, c
 
 ### 🏠 Hero Section
 
-![Hero Section](./screenshots/hero.png)
+![Hero Section](screenshot-1.png)
 
 ### 🎴 Card Showcase
 
