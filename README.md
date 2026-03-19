@@ -62,15 +62,15 @@ The goal was to create something that feels like a **digital vault** — warm, c
 
 ### 🎴 Card Showcase
 
-![Card Showcase](./screenshots/cards.png)
+![Card Showcase](screenshot-2.png)
 
 ### 📚 Collection Section
 
-![Collection](./screenshots/collection.png)
+![Collection](.screenshot-3.png)
 
 ### 🎮 Favorite Games
 
-![Games](./screenshots/games.png)
+![Connection](screenshot-4.png)
 
 ---
 
