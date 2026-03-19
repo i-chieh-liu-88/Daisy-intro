@@ -54,7 +54,6 @@ The goal was to create something that feels like a **digital vault** — warm, c
 
 ## 📸 Screenshots
 
-> 📌 Replace the image paths below with your actual screenshots (store them in `/assets` or `/screenshots`)
 
 ### 🏠 Hero Section
 
@@ -66,9 +65,9 @@ The goal was to create something that feels like a **digital vault** — warm, c
 
 ### 📚 Collection Section
 
-![Collection](.screenshot-3.png)
+![Collection](screenshot-3.png)
 
-### 🎮 Favorite Games
+### 🎮 connection
 
 ![Connection](screenshot-4.png)
 
