@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Card Collector's Vault</title>
+  </head>
+
+  <body class="bg-[#f6f1ea] text-[#2f2419]">
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-20 bg-[#fffaf3]/90 backdrop-blur border-b border-[#e8dccd]"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <span class="font-semibold">🎴 Card Vault</span>
+        <button
+          id="menu-toggle"
+          type="button"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-[#cfb79f] text-[#5d4030]"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          <svg
+            id="menu-open-icon"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <svg
+            id="menu-close-icon"
+            class="w-5 h-5 hidden"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M6 6L18 18M18 6L6 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <nav class="hidden md:flex gap-6 text-sm text-[#6c5a47]">
+          <a href="#about" class="hover:text-[#2f2419]">My Collection</a>
+          <a href="#skills" class="hover:text-[#2f2419]">Games</a>
+          <a href="#experience" class="hover:text-[#2f2419]">Achievements</a>
+          <a href="#contact" class="hover:text-[#2f2419]">Contact</a>
+          
+        </nav>
+      </div>
+
+      <nav
+        id="mobile-menu"
+        class="md:hidden overflow-hidden max-h-0 opacity-0 -translate-y-1 pointer-events-none transition-all duration-300 ease-out border-t border-[#e8dccd] bg-[#fffaf3] px-6 text-sm text-[#6c5a47]"
+      >
+        <div class="flex flex-col gap-4">
+          <a href="#about" class="hover:text-[#2f2419]">My Collection</a>
+          <a href="#skills" class="hover:text-[#2f2419]">Games</a>
+          <a href="#experience" class="hover:text-[#2f2419]">Achievements</a>
+          <a href="#contact" class="hover:text-[#2f2419]">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 mt-3 flex justify-end">
+    <div class="dropdown dropdown-end mb-1">
+  <div tabindex="0" role="button" class="btn">
+    Theme
+    <svg
+      width="12px"
+      height="12px"
+      class="inline-block h-2 w-2 fill-current opacity-60"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 2048 2048">
+      <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+    </svg>
+  </div>
+  <ul tabindex="-1" class="dropdown-content bg-base-300 rounded-box z-1 w-52 p-2 shadow-2xl">
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Default"
+        value="default" />
+    </li>
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Retro"
+        value="retro" />
+    </li>
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Cyberpunk"
+        value="cyberpunk" />
+    </li>
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Valentine"
+        value="valentine" />
+    </li>
+    <li>
+      <input
+        type="radio"
+        name="theme-dropdown"
+        class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
+        aria-label="Aqua"
+        value="aqua" />
+    </li>
+  </ul>
+    </div>
+    </div>
+
+    <!-- Hero -->
+    
+    <section class="py-5">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-12">
+        <div class="space-y-8 text-center">
+          <span class="text-rotate text-6xl">
+  
+            <span class="justify-items-center font bold text-[#5d4030] font-black">
+            <span>BUILD</span>
+            <span>AN</span>
+            <span>EPIC</span>
+            <span>CARD</span>
+            <span>COLLECTION</span>
+    
+          </span>
+          </span>
+
+          <p class="text-lg text-[#6c5a47] leading-relaxed max-w-2xl mx-auto">
+            I am a passionate board game card collector dedicated to hunting rare pulls, completing epic sets, and preserving the art of tabletop
+            gaming. 
+          </p>
+<!-- button -->
+          <div class="flex gap-4 justify-center">
+            <a
+              href="#contact"
+              class="btn btn-primary"
+            >
+              Get in Touch
+            </a>
+            <a
+              href="#skills"
+              class="btn btn-outline btn-primary"
+            >
+              Explore My Collection
+            </a>
+          </div>
+        </div>
+
+        <!-- Cards Hover -->
+
+        <div class="flex gap-8 justify-center">
+          <div class="hover-3d">
+            
+            <figure class="w-60 rounded-2xl">
+              <img
+                src="https://img.daisyui.com/images/stock/card-1.webp?x"
+                alt="Tailwind CSS 3D card"
+              />
+            </figure>
+            <!-- 8 empty divs needed for the 3D effect -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div class="hover-3d">
+            <!-- content -->
+            <figure class="w-60 rounded-2xl">
+              <img
+                src="https://img.daisyui.com/images/stock/card-2.webp?x"
+                alt="Tailwind CSS 3D hover"
+              />
+            </figure>
+            <!-- 8 empty divs needed for the 3D effect -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div class="hover-3d">
+            <!-- content -->
+            <figure class="w-60 rounded-2xl">
+              <img
+                src="https://img.daisyui.com/images/stock/card-3.webp?x"
+                alt="Tailwind CSS 3D hover"
+              />
+            </figure>
+            <!-- 8 empty divs needed for the 3D effect -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Collection -->
+    <section id="about" class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-6 space-y-6 mb-7">
+        <h2 class="text-3xl font-semibold">My Collection</h2>
+        <p class="text-[#6c5a47] leading-relaxed">
+          I am a dedicated board game card collector passionate about preserving
+          gaming history and discovering rare gems. With over 500 cards from
+          classic and contemporary games, I focus on identifying limited
+          editions, understanding card rarity, and building thematic sets. My
+          collection celebrates the intersection of strategy, art, and
+          storytelling that makes board game cards timeless treasures for
+          collectors and enthusiasts alike.
+        </p>
+      </div>
+
+      <!-- Featured Board Game Cards -->
+      <div class="card card-sm bg-base-200 max-w-60 shadow justify-center mx-auto my-auto">
+         <figure class="hover-gallery">
+          <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=800&q=80" alt="Fantasy board game card" />
+          <img src="https://images.unsplash.com/photo-1632507127781-0c13b7d66f68?auto=format&fit=crop&w=800&q=80" alt="Strategy board game card" />
+          <img src="https://images.unsplash.com/photo-1606503153255-59d8b8b0a1f1?auto=format&fit=crop&w=800&q=80" alt="Collector edition game card" />
+          <img src="https://images.unsplash.com/photo-1624969862644-791f3dc98927?auto=format&fit=crop&w=800&q=80" alt="Rare trading game card" />
+        </figure>
+        <div class="card-body text-white">
+        <h2 class="card-title flex justify-between ">
+         Legendary Card Set
+        <span class="font-normal">4 Rare Cards</span>
+        </h2>
+        <p>Featured board game cards from fantasy, strategy, and collector editions.</p>
+        </div>
+      </div>
+</div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 bg-[#6c5a47]">
+      <div class="max-w-6xl mx-auto px-6 space-y-12">
+        <h2 class="text-3xl font-semibold">Favorite Games</h2>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="p-6 bg-white rounded-xl border">
+            <h4 class="font-medium">Magic: The Gathering</h4>
+            <p class="text-sm text-[#6c5a47] mt-2">
+              Collecting rare MTG cards across multiple editions and formats
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl border">
+            <h4 class="font-medium">Yu-Gi-Oh!</h4>
+            <p class="text-sm text-[#6c5a47] mt-2">
+              Hunting vintage and holographic cards from early sets
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl border">
+            <h4 class="font-medium">Pokémon TCG</h4>
+            <p class="text-sm text-[#6c5a47] mt-2">
+              Building comprehensive collections from base set to modern era
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl border">
+            <h4 class="font-medium">One Piece TCG</h4>
+            <p class="text-sm text-[#6c5a47] mt-2">
+              Collecting competitive and promotional cards from global releases
+              Translating flavor and process into memorable guest experiences
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-6 spaollecting Achievements</h2>
+
+        <div class="space-y-8">
+          <div>
+            <h4 class="font-medium">Completed MTG Collection - Rival's Duel</h4>
+            <p class="text-sm text-[#6c5a47] mt-1">
+              Successfully acquired all rare cards from the Rival's Duel set,
+              including PSA 9-graded holographic variants. Focused on condition
+              assessment and market research to complete the set within budget.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-medium">Pokémon Base Set Grader - Premium Quality</h4>
+            <p class="text-sm text-[#6c5a47] mt-1">
+              Curated and graded original Pokémon Base Set cards through third-party
+              certification. Built expertise in identifying counterfeits and
+              assessing card condition using professional standards.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-medium">Community Trading & Mentoring - Local Game Shop</h4>
+            <p class="text-sm text-[#6c5a47] mt-1">
+              Mentored new collectors on card valuation, rarity identification,
+              and collection strategies. Facilitated fair trades and helped
+              others build their own specialized collectionse,
+              craftsmanship, and the unique profile of every coffee served.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24">
+      <div class="max-w-4xl mx-auto px-6 spConnect With a Fellow Collector</h2>
+
+        <form class="grid gap-6 bg-white p-8 rounded-xl border">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="border px-4 py-3 rounded-lg"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="border px-4 py-3 rounded-lg"
+          />
+          <textarea
+            rows="4"
+            placeholder="Tell me about your collection, trades, or inquiries"
+            class="border px-4 py-3 rounded-lg"
+          ></textarea>
+          <button class="bg-[#5d4030] text-white px-6 py-3 rounded-lg text-sm">
+            Send Message"bg-[#5d4030] text-white px-6 py-3 rounded-lg text-sm">
+            Send Inquiry
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer cCard Collector's Vault text-center text-sm text-[#7a6653]">
+      © 2026 Yirgacheffe. All rights reserved.
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("menu-open-icon");
+      const closeIcon = document.getElementById("menu-close-icon");
+
+      const setMenuState = (isOpen) => {
+        mobileMenu.classList.toggle("max-h-0", !isOpen);
+        mobileMenu.classList.toggle("opacity-0", !isOpen);
+        mobileMenu.classList.toggle("-translate-y-1", !isOpen);
+        mobileMenu.classList.toggle("pointer-events-none", !isOpen);
+        mobileMenu.classList.toggle("max-h-64", isOpen);
+        mobileMenu.classList.toggle("opacity-100", isOpen);
+        mobileMenu.classList.toggle("translate-y-0", isOpen);
+        mobileMenu.classList.toggle("pointer-events-auto", isOpen);
+        mobileMenu.classList.toggle("py-4", isOpen);
+        mobileMenu.classList.toggle("py-0", !isOpen);
+        openIcon.classList.toggle("hidden", isOpen);
+        closeIcon.classList.toggle("hidden", !isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        setMenuState(!isOpen);
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenuState(false));
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+          setMenuState(false);
+        }
+      });
+
+      setMenuState(false);
+    </script>
+  </body>
+</html>
